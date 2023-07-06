@@ -1,0 +1,99 @@
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --bg-color: #f9f9f9;
+  --dot-color: #ccc;
+  --dot-size: 2px;
+  --dot-space: 30px;
+  --dot-dimension: 10px;
+}
+
+.grid-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 41px;
+	background:
+    linear-gradient(90deg, var(--bg-color) calc(var(--dot-space) - var(--dot-size)), transparent 1%) top left,
+    linear-gradient(var(--bg-color) calc(var(--dot-space) - var(--dot-size)), transparent 1%) top left,
+    var(--dot-color);
+  background-size: var(--dot-space) var(--dot-space);
+}
+
+.coordinate-modal {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  padding: 10px;
+  font-size: 12px;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  width: 140px;
+}
+
+.box-container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 310px;
+  height: 132px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.10);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.-abs-pos {
+  position: absolute;
+}
+
+.-abs-pos-1 {
+  top: 30px;
+  left: 30px;
+}
+
+.-abs-pos-1-conn {
+  top: 500px;
+  left: 30px;
+}
+
+.node {
+  width: 10px;
+  height: 10px;
+  background-color: #aaa;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.-node-pos-right {
+  top: calc(50% - 10px);
+  right: -5px;
+}
+
+.-node-pos-left {
+  top: calc(50% - 10px);
+  left: -5px;
+}
+
+.-node-top-center {
+  top: -5px;
+  right: calc(50% - 10px);
+}
