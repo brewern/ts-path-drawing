@@ -1,3 +1,3 @@
 # ts-path-drawing
 
-![alt text](https://github.com/nbrewer/ts-path-drawing/blob/main/screenshot.png?raw=true)
+![alt text](https://github.com/brewern/ts-path-drawing/blob/main/screenshot.png?raw=true)
